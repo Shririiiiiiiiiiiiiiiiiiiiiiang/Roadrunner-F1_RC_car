@@ -1,0 +1,4 @@
+This car uses a 3S lipo battery for its power a brushless outrunner as its motor to give that perfect power(note to take a rc car one and not a drone brushless motor)
+to make the cars wheels fell very less friction we are using ball berings whereveer needed to reduce friction and help the car un smoothly
+the gear ration which will be used it 4:1 gear ratio giving the perect torque and op speed required for a f1 feel
+The car will be having air channels going through to give clean air to the ESC, Motor< And the battery and this will dissipiate heat also there will be a small drone motor attached to afan which will help in pulling out the air the frontal air vents will be located in three parts 1st the nos and other teo on the side curves each air channel will help in cooling 1 componenet and then they will all converge into 1 channel and that air wil be sucked out by the motor

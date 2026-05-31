@@ -1,0 +1,4 @@
+The Roadrunner is a custom built Formula 1 inspired rc car made using cardboard icercream sticks and mechano metal strips the approx cost on this build in 60 to 70 $ or 6000 to 7000₹ (indian)
+Tis car consists of various things such as Active DRS(Drag reduction system) where the flap at the back of the car retracts to create less drag or stimulate it at straights, this car then has ERS(energy recovery system) type of thing which pulls out the maximum power out of the battery this car is made o drive up to 40 to 45 kmphs max speed and normal cruise speed at 30 kmph without overheating the system
+This car can calculate its own speed, it can be attached to addititon bunch of LiDAR sensors for abstacle collision reducion and type of semiautonomus driving.
+The projcted weight of the car is around 1 kg at this weight it wil be able to achive its tp speed of 40 to 45kmphs if made and tuned properly
