@@ -20,3 +20,7 @@
 # 7th june, 2026
 
 - Creating Bill of materials
+
+# 8th june, 2026
+
+- BOM finished

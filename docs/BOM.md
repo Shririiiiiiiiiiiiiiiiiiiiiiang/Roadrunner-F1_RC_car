@@ -81,7 +81,7 @@ IMAX B6 balance charger; 1pc; to charge the battery
 
 "12V 5A power supply for charger; 1pc; to convert AC current to DC current as B6 charger needs DC current
 
-LiPo low voltage alarm; 1pc; battery protection and low voltage warning
+3S LiPo low voltage alarm; 1pc; alarm triggers at 3.5V per cell
 
 LiPo saftey bag(fire-proof); 1pc; safley charging the battery
 
