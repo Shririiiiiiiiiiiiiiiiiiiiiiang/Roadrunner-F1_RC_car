@@ -24,3 +24,7 @@
 # 8th june, 2026
 
 - BOM finished
+
+# 10th june, 2026
+
+- Started with Wrirng plan in wiring_plan.md
