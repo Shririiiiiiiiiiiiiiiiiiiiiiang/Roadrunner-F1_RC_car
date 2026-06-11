@@ -27,4 +27,8 @@
 
 # 10th june, 2026
 
-- Started with Wrirng plan in wiring_plan.md
+- Started with Wiring plan in wiring_plan.md
+
+# 11 june, 2026
+
+- Completed Wiring plan
