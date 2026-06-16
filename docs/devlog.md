@@ -32,3 +32,10 @@
 # 11 june, 2026
 
 - Completed Wiring plan
+
+## 13th june, 2026
+
+- started with roadrunner_main.ino file
+
+## 16th june, 2026
+- Still continuing with the main skeleton roadrunner_main.ino
