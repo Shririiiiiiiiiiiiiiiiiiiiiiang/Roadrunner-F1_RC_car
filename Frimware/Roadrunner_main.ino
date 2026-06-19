@@ -1,48 +1,40 @@
-char driving_mode = 'N'; // "P" for Pit mode, "N" for normal, "A" for attack
 int max_speed = 0;
 int max_steer_angle = 0;
 int ers_duration = 0;
+int pot_value = 0; //potentiometer value
+int power_percent = 0;
 bool ERS_allowed = false;
 bool DRS_allowed = false;
+bool pit_mode = false;
 
-
-
-
-
-
-
-
-
+int pot_pin = A0;
 
 
 void startupCheck() {
 
 }
 
-void handleDrivingModes() {
-
-    if(driving_mode == 'P') {
-
-        max_speed = 5;
-        max_steer_angle = 30;
+void handleSpeedLimiter() {
+    if(pit_mode == true){
+        max_speed = 7;
         ERS_allowed = false;
         DRS_allowed = false;
-        ers_duration = 0;
 
     }
+    else{
+        pot_value = analogRead(pot_pin);
+        power_percent = map(pot_value, 0, 1023, 0, 100);//plots pot values of 0 to1023 to 0 to 100 %
+        max_speed = map(power_percent, 0, 100, 0, 45);//plots 0 to 100 % to 0 to 45 kmph(approxspeed considered 45 may be lesser)
 
-    else if (driving_mode == 'N') {
-        max_speed = 35;
-        max_steer_angle = 30
-        ERS_allowed = true;
-        DRS_allowed = true;
-        ers_duration = 5;
- 
-    }
-
-    else if (driving_mode == 'A') {
-        max_speed = 50
-        max_steer_angle 
+        if(power_percent <= 20) {
+            ERS_allowed = false;
+            DRS_allowed = false;
+             
+        }
+        else{
+            ERS_allowed = true;
+            DRS_allowed = true;
+        }
     }
 
 }
@@ -93,7 +85,7 @@ void handleFailSafe() {
 }
 
 void setup() {
-
+Serial.begin(9600);
 }
 
 void loop() {
@@ -104,7 +96,7 @@ void loop() {
 
     handleCommunication();
 
-    handleDrivingModes();
+    handleSpeedLimiter();
 
     handleSteering();
 
