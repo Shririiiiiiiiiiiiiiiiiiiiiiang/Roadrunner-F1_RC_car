@@ -39,3 +39,6 @@
 
 ## 16th june, 2026
 - Still continuing with the main skeleton roadrunner_main.ino
+
+## 19TH JUNE, 2026
+- In roadrunner_main.ino wrote the speed limit logic and serial begin
