@@ -42,3 +42,14 @@
 
 ## 19TH JUNE, 2026
 - In roadrunner_main.ino wrote the speed limit logic and serial begin
+
+## 21th june, 2026
+
+- Still writing the main roadrunner files
+
+## 22 june, 2026
+
+- updated roadrunner main files
+- added code to speed limiter,simulation mode(using fake values till i get the real car electronics)
+-added throttle logic
+-made telemetry output

@@ -3,6 +3,13 @@ int max_steer_angle = 0;
 int ers_duration = 0;
 int pot_value = 0; //potentiometer value
 int power_percent = 0;
+bool simulation_mode = true; //giving fake values till i get  the NRF
+int throttle_input = 0;
+int steering_input = 512;
+int requested_power_percent = 0;
+int final_power_percent = 0;
+bool ERS_pressed = false;
+bool DRS_pressed = false;
 bool ERS_allowed = false;
 bool DRS_allowed = false;
 bool pit_mode = false;
@@ -49,7 +56,17 @@ void handleSafetySystems() {
 
 
 void readRemoteInputs() {
-
+    if(simulation_mode == true) {
+        throttle_input = 0;
+        steering_input = 512;
+        ERS_pressed = false;
+        DRS_pressed = false;
+        pit_mode = false;
+    
+    }
+    else{
+        //future NRF repute inpput code
+    }
 }
 
 void readSensors() {
@@ -61,6 +78,13 @@ void handleSteering() {
 }
 
 void handleThrottle() {
+    requested_power_percent = map(throttle_input, 0, 1023, 0, 100);
+    if(requested_power_percent > max_power_percent) {
+        final_power_percent = max_power_percent;
+    }
+    else{
+        final_power_percent = requested_power_percent;  
+    }
 
 }
 
@@ -73,8 +97,33 @@ void handleGyromode() {
 }
 
 void handleTelemetry() {
+    Serial.print("Throttle: ");
+    Serial.print(throttle_input);
 
+    Serial.print(" | Steering: ");
+    Serial.print(steering_input);
+
+    Serial.print(" | Max power: ");
+    Serial.print(max_power_percent);
+
+    Serial.print(" | ERS allowed: ");
+    Serial.print(ERS_allowed);
+
+    Serial.print(" | DRS Allowed: ");
+    Serial.print(DRS_allowed);
+
+    Serial.print(" Pit mode: ");
+    Serial.print(pit_mode);
+
+    Serial.print("Requested Power: ");
+    Serial.print(requested_power_percent);
+
+    Serial.print(" | Final power: ");
+    Serial.print(final_power_percent);
+    delay(500);
 }
+
+
 
 void handleDRS() {
 
@@ -86,6 +135,7 @@ void handleFailSafe() {
 
 void setup() {
 Serial.begin(9600);
+pinMode(pot_pin, INPUT);
 }
 
 void loop() {
