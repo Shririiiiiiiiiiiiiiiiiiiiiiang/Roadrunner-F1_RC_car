@@ -53,3 +53,8 @@
 - added code to speed limiter,simulation mode(using fake values till i get the real car electronics)
 -added throttle logic
 -made telemetry output
+
+## 23 june, 2026
+
+- Test roadrunner file on Wowki simulator to test pot values and code truth
+- Added code for advance DRS logic, car pot value lock, smart DRS and ERS logic allowance
