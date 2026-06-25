@@ -58,3 +58,13 @@
 
 - Test roadrunner file on Wowki simulator to test pot values and code truth
 - Added code for advance DRS logic, car pot value lock, smart DRS and ERS logic allowance
+
+## 24th june, 2026
+
+- Added advance logic for ERS
+
+## 25th June, 2026
+
+- Added steering logic 
+- ERS timer
+- Tested with servo on wowki

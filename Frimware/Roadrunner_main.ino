@@ -1,3 +1,6 @@
+#include <Servo.h>
+
+Servo steering_servo;
 int max_power_percent = 0;
 int max_steer_angle = 0;
 int ers_duration = 0;
@@ -6,6 +9,8 @@ int power_percent = 0;
 bool simulation_mode = true; //giving fake values till i get  the NRF
 int throttle_input = 0;
 int steering_input = 512;
+int steering_angle = 0;
+int servo_angle = 90;
 int requested_power_percent = 0;
 int final_power_percent = 0;
 bool ERS_pressed = true;//for simulation
@@ -17,6 +22,11 @@ bool DRS_active = false;
 bool pit_mode = false;
 int power_delta_percent = 0;
 int effective_power_limit_percent = 0;
+unsigned long ERS_start_time = 0;
+unsigned long ERS_last_time_used = 0;
+const unsigned long ERS_MAX_DURATION = 7000; // 7 sec
+const unsigned long ERS_COOLDOWN = 20000; //20 sec
+bool ERS_on_cooldown = false;
 
 int pot_pin = A0;
 
@@ -51,11 +61,27 @@ void handleSpeedLimiter() {
 }
 
 void handleERS() {
-    if(ERS_allowed == true && ERS_pressed == true) {
+   unsigned long current_time = millis();
+   if(current_time - ERS_last_time_used < ERS_COOLDOWN) {
+    ERS_on_cooldown = true;
+   }
+   else {
+    ERS_on_cooldown = false;
+   }
+   if(ERS_allowed == true && ERS_pressed == true && ERS_on_cooldown == false &&  ERS_active == false) {
         ERS_active = true;
-    }
-    else{
-        ERS_active = false;
+        ERS_start_time = current_time;
+   }
+
+    if(ERS_active == true) {
+        if(current_time - ERS_start_time >= ERS_MAX_DURATION) {
+            ERS_active = false;
+            ERS_last_time_used = current_time; // current_time gets created in line 59
+        }
+        if(ERS_pressed == false || ERS_allowed == false) {
+            ERS_active = false;
+            ERS_last_time_used = current_time;
+        }
     }
 
 }
@@ -68,7 +94,7 @@ void handleSafetySystems() {
 void readRemoteInputs() {
     if(simulation_mode == true) {
         throttle_input = 1023; // Only for SIMULATIONN
-        steering_input = 512;
+        steering_input = 0; // for Wowki testings
         ERS_pressed = true;
         DRS_pressed = true;
         pit_mode = false;
@@ -84,7 +110,10 @@ void readSensors() {
 }
 
 void handleSteering() {
+    steering_angle = map(steering_input, 0, 1023, -30, 30);
 
+    servo_angle = map(steering_angle, -30, 30, 60, 120);
+    steering_servo.write(servo_angle);
 }
 
 void handleThrottle() {
@@ -142,7 +171,7 @@ void handleTelemetry() {
     Serial.print(pit_mode);
 
     Serial.print(" | Requested Power: ");
-    Serial.print(requested_power_percent);
+    Serial.println(requested_power_percent);
 
     Serial.print(" | ERS Active: ");
     Serial.print(ERS_active);
@@ -158,6 +187,16 @@ void handleTelemetry() {
 
     Serial.print(" | Final power: ");
     Serial.println(final_power_percent);
+
+    Serial.print(" | ERS cooldown: ");
+    Serial.print(ERS_on_cooldown);
+
+    Serial.print(" | Steering angle: ");
+    Serial.println(steering_angle);
+
+    Serial.print(" | Servo angle: ");
+    Serial.println(servo_angle);
+
     delay(500);
 }
 
@@ -180,6 +219,8 @@ void handleFailSafe() {
 void setup() {
 Serial.begin(9600);
 pinMode(pot_pin, INPUT);
+ERS_last_time_used = millis() - ERS_COOLDOWN;
+steering_servo.attach(9);
 }
 
 void loop() {
