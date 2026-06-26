@@ -17,6 +17,9 @@ bool ERS_pressed = true;//for simulation
 bool DRS_pressed = true;//for simulation
 bool ERS_allowed = false;
 bool DRS_allowed = false;
+unsigned long DRS_open_time= 0;
+const unsigned long DRS_min_use_Time = 2000;
+const int DRS_close_steering_angle = 10;
 bool ERS_active = false;
 bool DRS_active = false;
 bool pit_mode = false;
@@ -110,9 +113,10 @@ void readSensors() {
 }
 
 void handleSteering() {
-    steering_angle = map(steering_input, 0, 1023, -30, 30);
+    max_steer_angle = map(final_power_percent, 0, 100, 45, 15);
+    steering_angle = map(steering_input, 0, 1023, -max_steer_angle, max_steer_angle);
 
-    servo_angle = map(steering_angle, -30, 30, 60, 120);
+    servo_angle = map(steering_angle, -45, 45, 60, 120);
     steering_servo.write(servo_angle);
 }
 
@@ -237,9 +241,9 @@ void loop() {
 
     handleDRS();
 
-    handleSteering();
-
     handleThrottle();
+
+    handleSteering();
 
     handleFailSafe();
 
