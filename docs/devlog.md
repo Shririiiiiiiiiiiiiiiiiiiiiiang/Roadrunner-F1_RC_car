@@ -68,3 +68,8 @@
 - Added steering logic 
 - ERS timer
 - Tested with servo on wowki
+
+## 12th july, 2026
+- updated BOM
+- Major change now I will be using ESP 32  DevKit V1 (38-pin) instead of arduino for better processing
+- updated roadruner_main.ino

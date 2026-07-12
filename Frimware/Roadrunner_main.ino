@@ -1,6 +1,10 @@
-#include <Servo.h>
+#include <ESP32Servo.h>
+#include <esp_task_wdt.h>
 
 Servo steering_servo;
+Servo motor_ESC;
+
+int esc_signal = 1000;
 int max_power_percent = 0;
 int max_steer_angle = 0;
 int ers_duration = 0;
@@ -8,13 +12,13 @@ int pot_value = 0; //potentiometer value
 int power_percent = 0;
 bool simulation_mode = true; //giving fake values till i get  the NRF
 int throttle_input = 0;
-int steering_input = 512;
+int steering_input = 2048;
 int steering_angle = 0;
 int servo_angle = 90;
 int requested_power_percent = 0;
 int final_power_percent = 0;
-bool ERS_pressed = true;//for simulation
-bool DRS_pressed = true;//for simulation
+bool ERS_pressed = false;//for simulation
+bool DRS_pressed = false;//for simulation
 bool ERS_allowed = false;
 bool DRS_allowed = false;
 unsigned long DRS_open_time= 0;
@@ -31,7 +35,10 @@ const unsigned long ERS_MAX_DURATION = 7000; // 7 sec
 const unsigned long ERS_COOLDOWN = 20000; //20 sec
 bool ERS_on_cooldown = false;
 
-int pot_pin = A0;
+int pot_pin = 34;
+int esc_pin = 19;
+
+
 
 
 void startupCheck() {
@@ -47,7 +54,7 @@ void handleSpeedLimiter() {
     }
     else{
         pot_value = analogRead(pot_pin);
-        power_percent = map(pot_value, 0, 1023, 0, 100);//plots pot values of 0 to1023 to 0 to 100 %
+        power_percent = map(pot_value, 0, 4095, 0, 100);//plots pot values of 0 to1023 to 0 to 100 %
         max_power_percent = power_percent;
 
         if(power_percent <= 20) {
@@ -96,8 +103,8 @@ void handleSafetySystems() {
 
 void readRemoteInputs() {
     if(simulation_mode == true) {
-        throttle_input = 1023; // Only for SIMULATIONN
-        steering_input = 0; // for Wowki testings
+        throttle_input = 4095; // Only for SIMULATIONN
+        steering_input = 2048; // for Wowki testings
         ERS_pressed = true;
         DRS_pressed = true;
         pit_mode = false;
@@ -114,14 +121,14 @@ void readSensors() {
 
 void handleSteering() {
     max_steer_angle = map(final_power_percent, 0, 100, 45, 15);
-    steering_angle = map(steering_input, 0, 1023, -max_steer_angle, max_steer_angle);
+    steering_angle = map(steering_input, 0, 4095, -max_steer_angle, max_steer_angle);
 
-    servo_angle = map(steering_angle, -45, 45, 60, 120);
+    servo_angle = map(steering_angle, -max_steer_angle, max_steer_angle, 60, 120);
     steering_servo.write(servo_angle);
 }
 
 void handleThrottle() {
-    requested_power_percent = map(throttle_input, 0, 1023, 0, 100);
+    requested_power_percent = map(throttle_input, 0, 4095, 0, 100);
     
     power_delta_percent = 0;
     if(DRS_active == true) {
@@ -220,14 +227,26 @@ void handleFailSafe() {
 
 }
 
+void handleMotorOutput() {
+    esc_signal = map(final_power_percent, 0, 100, 1000, 2000);
+    motor_ESC.writeMicroseconds(esc_signal);
+}
+
 void setup() {
-Serial.begin(9600);
+Serial.begin(115200);
 pinMode(pot_pin, INPUT);
+esp_task_wdt_init(3,true);
+esp_task_wdt_add(NULL);
 ERS_last_time_used = millis() - ERS_COOLDOWN;
-steering_servo.attach(9);
+steering_servo.attach(18);
+motor_ESC.attach(esc_pin);
+motor_ESC.writeMicroseconds(1000);
+delay(2000);
 }
 
 void loop() {
+
+    esp_task_wdt_reset();
 
     readRemoteInputs();
 
@@ -242,6 +261,8 @@ void loop() {
     handleDRS();
 
     handleThrottle();
+
+    handleMotorOutput();
 
     handleSteering();
 
