@@ -73,3 +73,7 @@
 - updated BOM
 - Major change now I will be using ESP 32  DevKit V1 (38-pin) instead of arduino for better processing
 - updated roadruner_main.ino
+
+## 12th july to 21st august
+- had took some break and didnt do anything
+- have made some cad design for the remote
