@@ -7,6 +7,19 @@ I am building this because i have always liked to make hardware projects earlier
 This RC car will have many features like Live telementry,ERS,DRS,a good top speed,etc
 what makes it different from other RC cars is its design and use of materials this car will be made to look aerodynamic, there will be air channels running through inside of the car for keeping the components such as the ESC,Motor battery cool, The car's DRS flap will be movable to reduce drag at high speeds,it will have an avg 200 to 250 mtrs range in an open field and many more 
 
+## Why i built it
+
+I like f1 also i like making hardware as i had told earlier i had made very basic cars like the 4CH boards ones but this one i wanted to go big so i choose this project as this would give me a remote car of my own fully made by me that too f1 styled plus i also got to learn to code Arduino and ESP32
+
+## AI usage
+- I have used Ai at the start to learn the skills needed to learn coding the Arduino and esp32 as i aldready knew something of C++ due to it being a chapter for us in schol i didnt need to use too much AI
+- secondly i used Ai when i had t start with CAD as i had never used Cad i used a cmbo of Claude and Youtube to learn CAD
+
+## Tech stack
+- C++
+- Wowki for simulation
+- CAD for designing
+
 
 ## Planned Features
 1. Telementry
@@ -37,3 +50,8 @@ See docs/devlog.md
 
 ## future Goals
 To be completed
+
+## Built for 
+- Hackclub Beest
+- NOTE:- This project was orignally for horizons then i shifted it here but it was never shipped to horizons it just sat there nreviewed and then i directly shipped it here
+
