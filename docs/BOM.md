@@ -2,7 +2,8 @@
 
 
 
-
+git add .
+git commit -m 
 
 # Bill of materials
 # All Prices written here are for one item
