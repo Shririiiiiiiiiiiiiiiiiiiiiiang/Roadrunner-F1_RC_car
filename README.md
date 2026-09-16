@@ -26,7 +26,10 @@ I like f1 also i like making hardware as i had told earlier i had made very basi
 - ![Sensor holder](stl%20files/photos/sensor%20holder.png)
 
 - Sensor holder- https://raw.githubusercontent.com/Shririiiiiiiiiiiiiiiiiiiiiiang/Roadrunner-F1_RC_car/main/stl%20files/sensor%20holder.stl
--![Wire holder](stl%20files/photos/wire%20holder.png)
+- ![Wire holder](stl%20files/photos/wire%20holder.png)
+
+- remote(Note this is incomplete i have just did the placement of some things needed) https://raw.githubusercontent.com/Shririiiiiiiiiiiiiiiiiiiiiiang/Roadrunner-F1_RC_car/main/stl%20files/Remotefile.stl
+- ![Remote CAD design](stl%20files/photos/remote%20incomplete.webp)
 
 
 ## Tech stack
