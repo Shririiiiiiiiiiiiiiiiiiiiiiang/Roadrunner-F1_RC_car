@@ -77,3 +77,6 @@
 ## 12th july to 21st august
 - had took some break and didnt do anything
 - have made some cad design for the remote
+
+## 15 - 16th september
+- I have made changes to the BOM added price and links and removed somethings which i am not gonna use
