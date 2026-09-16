@@ -1,9 +1,7 @@
 # Note- This project uses a combination of cartboard and 3d printed parts 
 
-
-
-git add .
-git commit -m 
+# Some parts here ave price higher than thier usual price coz they are inflated on amazon for most of my parts i am goona go nd buy then offline which will get me the real price, They are marked (Inflated Price)
+  
 
 # Bill of materials
 # All Prices written here are for one item
@@ -15,15 +13,15 @@ NRF24L01 + PA + LNA Module; 2pc; long range wireless link between car and remote
 
 NRF24 External Antenna 2.4GHz SMA; 2pc; antennas for PA+LNA Modules; included in above....
 
-NRF24 adapter board/3.3v regulator; 2pc; gives stable 3.3v to NRF; Price:-37₹/0.39$; Link:-
+NRF24 adapter board/3.3v regulator; 2pc; gives stable 3.3v to NRF; Price:-37₹/0.39$; Link:-https://robu.in/product/3-3v-adapter-board-for-24l01-wireless-module/?gad_source=1&gad_campaignid=17416544847&gbraid=0AAAAADvLFWcs_zBJPe7L1omuX1lr2kNzB&gclid=CjwKCAjw2aPVBhBkEiwA0Cptt284dgiZ2u7W0DcsMhN4m78SgfXGkz_2aF7B_-XKcSzXLKK4fVhBphoC5AUQAvD_BwE
 
 100µF electrolytic capacitor + 10µF electrolytic capacitor + 100nF ceramic capacitor; for each NRF24 module voltage stabilization; Price:-130₹/1.36$; Link:-https://robu.in/product/aluminum-electrolytic-12-kinds-0-22%ce%bcf-470%ce%bcf-capacitor-assorted-kit/
 
 100nF ceramic capacitor; 2-3pc; for MPU6050; Price:-160₹/1.67$; Link:-https://robu.in/product/ceramic-capacitor-assorted-kit-30-kinds-from-2pf-0-1uf/
 
-3650 2050KV brushless motor; 1pc; to power the car;THIS IS NOT THE EXACT ITEM I AM BUYING;  Price:-2009₹/20.95$; Link:-https://robu.in/product/surpass-hobby-3650-rocket-sensoreless-waterproof-motor-3-175-shaft-4-0-gold-plated-2050-kv/
+3650 2050KV brushless motor; 1pc; to power the car;  Price:-2009₹/20.95$; Link:-https://robu.in/product/surpass-hobby-3650-rocket-sensoreless-waterproof-motor-3-175-shaft-4-0-gold-plated-2050-kv/
 
-ESC 60A; 1pc; controls brushless motor;THIS IS NOT THE EXACT ITEM I AM BUYING;  Price:-6629₹/69.11$; Link:-https://www.amazon.in/Rocket-RC-Supersonic-50A-60A-110A/dp/B0CHQHRZNF?th=1
+(INFLATED PRICE)ESC 60A; 1pc; controls brushless motor;THIS IS THE EXACT ITEM I AM BUYING(But price may change);  Price:-6629₹/69.11$; Link:-https://www.amazon.in/Rocket-RC-Supersonic-50A-60A-110A/dp/B0CHQHRZNF?th=1
 
 DS3225 steel gear servo; 1pc; steering; Price:-1409₹/14.69$; Link:-https://robu.in/product/pro-range-ds3225-25kgcm-metal-gear-digital-servo-motor-180-degree/
 
@@ -31,7 +29,7 @@ AGFrc Sub-Micro Servo Motor; 1pc; DRS ; Price:-4160₹/43.67$; Link:-https://www
 
 470µF-1000µF capacitors; 2 pcs; servo current spike filter; Price:-; Link:-
 
-Hall effect Joy stick module; 2pc; one for steering & other for throttle; Price:-8822₹/91.98$(THIS IS NOT THE FINAL ONE I WILL CHANGE IT); Link:-https://www.amazon.in/GuliKit-Electromagnetic-Replacement-Installation-Calibration/dp/B0DP61XVJP?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A368CFGDO8H247&th=1
+(Heavly INFLATED PRICE {this is a joystick module for controller})Hall effect Joy stick module; 2pc; one for steering & other for throttle; Price:-8822₹/91.98$ {i am not buying this i am buying a way cheaper one offline **********************}(THIS IS NOT THE FINAL ONE I WILL CHANGE IT); Link:-https://www.amazon.in/GuliKit-Electromagnetic-Replacement-Installation-Calibration/dp/B0DP61XVJP?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A368CFGDO8H247&th=1
 
 push buttons; 5-7 pc; ERS,DRS,Modes; Price:-144rs/1.50$; Link:-https://robu.in/product/tactile-switch-round-key-12127-3mm-25pcs-kit/
 
@@ -47,9 +45,8 @@ Servo extension wire 30cm; 2pc; extending servo connections ; Price:-32rs/ 0.33$
 
 1000µF 25V low ESR capacitor; 2pc; ESC voltage spike protection; Price:-11rs/0.11; Link:-https://robu.in/product/1000uf-25v-electrolytic-capacitor-dip-pack-of-5/?gad_source=1&gad_campaignid=17427802703&gbraid=0AAAAADvLFWcmNaq6Eyhhkr7ixxEFy1aoq&gclid=CjwKCAjw2aPVBhBkEiwA0Cptt7vkB5j8Wt98lzCH3ajgMjJnfPX7q8-z8Y2kQ7l5HS3VS5UNvX4_VRoCGC0QAvD_BwE
 
-Anti-spark XT60 connector; 1pc; prevents connection spark saves ESC from spark damage; Price:-; Link:- (ading it afterwards)
 
-ESC programming card; 1pc; ESC configuration; Price:-3167rs/33.02$; Link:-https://www.amazon.in/Programming-Electronic-Controller-Programmer-Brushless/dp/B08HZ23KNQ
+(INFLATED PRICE)ESC programming card; 1pc; ESC configuration; Price:-3167rs/33.02$; Link:-https://www.amazon.in/Programming-Electronic-Controller-Programmer-Brushless/dp/B08HZ23KNQ
 
 Digital multimeter; 1pc; circuit testing and debugging; Price:-159rs/1.66$; Link:-https://www.amazon.in/SP-Electron-Multimeter-Measuring-Resistance/dp/B0GKG5WRQY
 
@@ -87,7 +84,7 @@ LiDAR module; 2 to 4 pc; experimental; Price:-4598rs/47.94$; Link:-https://robu.
 
 IMAX B6 balance charger; 1pc; to charge the battery; Price:-3279rs/34.19$; Link:-https://robu.in/product/imax-b6-50w-5a-chargerdischarger-1-6-cells-genuine/
 
-"12V 5A power supply for charger; 1pc; to convert AC current to DC current as B6 charger ; Price:-425rs/4.43$; Link:-https://robu.in/product/orange-ac-100-240v-to-dc-12v-5a-60w-power-adapter/
+12V 5A power supply for charger; 1pc; to convert AC current to DC current as B6 charger ; Price:-425rs/4.43$; Link:-https://robu.in/product/orange-ac-100-240v-to-dc-12v-5a-60w-power-adapter/
 
 3S LiPo low voltage alarm; 1pc; alarm triggers at 3.5V per cell; Price:-194rs/2.02$; Link:-https://robu.in/product/bx100-1-8s-lipo-battery-voltage-tester-low-voltage-buzzer-alarm-battery-voltage-checker-with-dual-speakers/?gad_source=1&gad_campaignid=17427802559&gbraid=0AAAAADvLFWdtl1xvYnz0X6g8jS86Oqd1K&gclid=CjwKCAjw2aPVBhBkEiwA0Cptt6p7_6vi_b8aLDdtJbzTNulKX0B0j_M2UpvUljrH88b9M0ehz-r20hoCef0QAvD_BwE
 
@@ -95,11 +92,11 @@ LiPo saftey bag(fire-proof); 1pc; safley charging the battery; Price:-249rs/2.60
 
 3.3V low-noise regulator; 2pc; stable NRF24 PA+LNA power supplyy; Price:-719rs/7.50; Link:-https://robu.in/product/lt3042-3-3v-single-supply-linear-regulator-module/
 
-XT60 connectors; 5,6 pc; battery and esc power connection; Price:-27rs/0.28$; Price:-; Link:-https://robocraze.com/products/xt60-connector-pair?variant=40194049540249&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_source=google&utm_medium=cpc&utm_campaign=BL+%7C+Pmax+%7C+Feed+Only+%7C+All+Products+%7C+Top+5+Cities+%7C22%2F06&utm_source=googleads&utm_medium=ppc&utm_campaign=21400046529&utm_content=_&utm_term=&campaignid=21400046529&adgroupid=&campaign=21400046529&gad_source=1&gad_campaignid=21406494659&gbraid=0AAAAADgHQvY6LOff7ApHYY0YOEsWq9TFZ&gclid=CjwKCAjw2aPVBhBkEiwA0Cptt_2-xWhe_FC9TZqmlh_S_uYAcMXiNgJcWyUJcQ3lkXl-RjYg0bs7DRoCzv8QAvD_BwE
+XT60 connectors; 5,6 pc; battery and esc power connection; Price:-27rs/0.28$; Link:-https://robocraze.com/products/xt60-connector-pair?variant=40194049540249&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_source=google&utm_medium=cpc&utm_campaign=BL+%7C+Pmax+%7C+Feed+Only+%7C+All+Products+%7C+Top+5+Cities+%7C22%2F06&utm_source=googleads&utm_medium=ppc&utm_campaign=21400046529&utm_content=_&utm_term=&campaignid=21400046529&adgroupid=&campaign=21400046529&gad_source=1&gad_campaignid=21406494659&gbraid=0AAAAADgHQvY6LOff7ApHYY0YOEsWq9TFZ&gclid=CjwKCAjw2aPVBhBkEiwA0Cptt_2-xWhe_FC9TZqmlh_S_uYAcMXiNgJcWyUJcQ3lkXl-RjYg0bs7DRoCzv8QAvD_BwE
 
-30A-40A fuse + fuse holder; 1pc; battery and ESC electrical protection; Price:-; Link:-(OFFLINE)
+30A-40A fuse + fuse holder; 1pc; battery and ESC electrical protection; Price:-150₹/1.80$; link:i am buying this offline as i am not finding suitable thing onlin
 
-Battery-strap/velcro-strap; 1-2pc; battery mounting and retention; Price:-; Link:-(OFFLINE)
+Battery-strap/velcro-strap; 1-2pc; battery mounting and retention; Price:-100₹/1.20$; link: i am buying this offline as i am not finding suitable thing online
 
 
 ### Remote power system
@@ -111,31 +108,23 @@ Battery-strap/velcro-strap; 1-2pc; battery mounting and retention; Price:-; Link
 
 
 ## Drivetrain(dimensions to be known)
-Rubber Wheel Set; 4pc; outdoor and rough-surface driving; Price:-; Link:-
+Rubber Wheel Set; 4pc; outdoor and rough-surface driving; Price:-284₹/2.96$; Link:-https://www.amazon.in/UG-LAND-INDIA-Rubber-Wheels/dp/B099GGXPKT/ref=sr_1_3?crid=196XGVHPTN25O&dib=eyJ2IjoiMSJ9.RK_3edHiToAiT_h685ghwpQwWhjyqC1RLnsGIGgtLsL4BLhNNps3hPB5yRp1V3yFn3l-6ajqJYATwtIdRa_10ijSWnWJFC8g2b62Ms-YDYfm5RMnQEKv73E2qdJED7ZMKIK45P-Xki0bPKWSVi7dkQfd7CWNMciyha38l7kCSMlmTv6XJXkIw39PRuHL2yGVKt11jY7UHai0jehyqpAIaH_IbKrg58o-JbuxZDaD1tO8w-fHjnofiAMASvq9VkD9N6h86v_QOEO41CRq4guEosQG8AsBg5NCeY0qSLinmN0.L_pCv4zvlqaUioZJ500HXUGnE468tgZ-skt6ZQcBqfk&dib_tag=se&keywords=Rubber+Wheel+Set+65mm&qid=1789554500&sprefix=rubber+wheel+set+65mm%2Caps%2C233&sr=8-3
 
-Foam Wheel Set; 4pc; indoor and smooth-surface driving; Price:-; Link:-
-
-Rear differential assembly; 1pc; transfers power while allowing different wheel speeds during cornering; Price:-; Link:-
+Foam Wheel Set; 4pc; indoor and smooth-surface driving; Price:-205₹/2.14$; Link:-https://havochobby.in/products/foam-wheel-65mm
 
 Front axle/kingpin set; 1pc; front wheel mounting and steering support; Price:-; Link:-
 
-608ZZ bearings + drivetrain bearings; 4 to 8 pcs; reduce friction and support thr rotating parts from scrubbing into the 3d printed parts or the cardboard; Price:-; Link:-
+608ZZ bearings + drivetrain bearings; 4 to 8 pcs; reduce friction and support thr rotating parts from scrubbing into the 3d printed parts or the cardboard; Price:-62₹/0.65$; Link:-https://robu.in/product/radial-ball-bearing-608zz-3d-printer-robot-4pcs/?gad_source=1&gad_campaignid=17416544847&gbraid=0AAAAADvLFWdny6lDqY0pQVcw5g5PulF29&gclid=CjwKCAjw_KjVBhAHEiwAnC0N9Cl5yge35lNy4gNQvu6Hvc1We2YGh0ArO91BcyXW7MeH9CDlgqAgURoCRwsQAvD_BwE
 
-Pinion gear; 1pc; mounted on motor shaft; Price:-; Link:-
+Pinion gear; 1pc; mounted on motor shaft; Price:-189₹/1.97$; Link:-https://robu.in/product/48p-18t-3-17mm-shaft-steel-pinion-gear-for-rc-hobby-motor-gear-1-10th-sct-monster/
 
-Differential input gear/spur gear; 1pc; transfers motor power to differential; Price:-; Link:-
-
-Motor Mount; 1pc; secures motor to chassis; Price:-; Link:-
+(INFLATED PRICE)spur gear; 1pc; mounted on wheel line; Price;- 1311₹/13.67$ Link;-https://www.amazon.in/Kimbrough-Pitch-Spur-Gear-72T/dp/B0006O1QU8
 
 Wheel hubs/ wheel adapters; 4pc; connects wheels to axles; Price:-; Link:-
 
 Steering linkage / Tie rods; 1 set; transfers servo movement to wheels; Price:-; Link:-
 
-Steering Knuckles; 2pc; allows front wheel steering; Price:-; Link:-
-
 Axle Collars; / Shaft stops; 2-4pc; prevent axle movement; Price:-; Link:-
-
-Drive Coupler; 1pc; connects drivetrain components wherever required(if only design requires it); Price:-; Link:-
 
 Motor shaft adapter if required; 1pc; matches motor shaft to pinion gear bore; Price:-; Link:-
 
@@ -214,61 +203,58 @@ rubber/foam pads; 1 pack; vibration damping; Price:-199rs/2.07$; Link:-https://w
 
 Blue Loctite threadlocker; 1pc; prevents screw loosening from vibration; Price:-880rs/9.17$; Link:-https://onlyscrews.in/products/loctite-242-medium-strength-thread-locking-adhesive-50-ml?currency=INR&country=IN&variant=50918075007289&stkn=6e84ebfba1b8&utm_source=google&utm_medium=cpc&utm_campaign=googleads_22612278384&utm_id=22612278384&utm_adgroup=&utm_assetgroup=6580321040&utm_content=ad_&utm_term=&utm_matchtype=&utm_device=c&utm_network=x&gad_source=1&gad_campaignid=22618647593&gbraid=0AAAAA9sP2SQV7AIeVwb7qQ799jxMGP2hs&gclid=CjwKCAjw2aPVBhBkEiwA0Cptt7ChmxYlbrNIEEoxGohFMB8q5I8BanatxcyR1kMHImc5Vbm1I7d5wRoCdv8QAvD_BwE
 
-Adhesive cable tie mounts; 1 pack; anchor points for zip ties; Price:-;550/5.73$ Link:-https://www.amazon.in/300Pcs-Adhesive-Cable-Mounts-19X19/dp/B09HHHYFVN?th=1
+(INFLATED PRICE)Adhesive cable tie mounts; 1 pack; anchor points for zip ties; Price:-;550/5.73$ Link:-https://www.amazon.in/300Pcs-Adhesive-Cable-Mounts-19X19/dp/B09HHHYFVN?th=1
 
 ## 3D printed material( can be either from hackclub Print legion or from Robu.in print)
 # The price Varies therefore i can give the prics
 # Some of thee i am gonna be making with cartboard as this is a early stage bom i am gonna make some changes to the 3d print section 
 ### Chassis and electronics mounting
-ESP32 mounting bracket; 1pc; secure mount the ESP32; material: PETG; Price:-; Link:-
+ESP32 mounting bracket; 1pc; secure mount the ESP32; material: PETG; Price:-; Link:- {Will be priced once all parts are made}
 
-NRF24 anteena mount; 1pc; stable anteena; material: PETG; Price:-; Link:-
+NRF24 anteena mount; 1pc; stable anteena; material: PETG; Price:-; Link:-{Will be priced once all parts are made}
 
-ESC mounting bracket; 1pc; secures the ESC; material: ABS; Price:-; Link:-
+ESC mounting bracket; 1pc; secures the ESC; material: ABS; Price:-; Link:-{Will be priced once all parts are made}
 
-battery tray; 1pc; battery positioning and retention; material: ABS; Price:-; Link:-
+battery tray; 1pc; battery positioning and retention; material: ABS; Price:-; Link:-{Will be priced once all parts are made}
 
-Servo mountng bracket(steering); 1pc; precise servo alingment; material: PTEG ; Price:-; Link:-
+Servo mountng bracket(steering); 1pc; precise servo alingment; material: PTEG ; Price:-; Link:-{Will be priced once all parts are made}
 
-Servo mountng bracket(steering); 1pc; DRS servo mounting;material: PTEG; Price:-; Link:-
+Servo mountng bracket(steering); 1pc; DRS servo mounting;material: PTEG; Price:-; Link:-{Will be priced once all parts are made}
 
-sensor mounting bracket; many; to mount all sensors; material: PTEG; Price:-; Link:-
+sensor mounting bracket; many; to mount all sensors; material: PTEG; Price:-; Link:-{Will be priced once all parts are made}
 
-Cable clips; many; to secure and hold wires; material: PTEG/PLA; Price:-; Link:-
+Cable clips; many; to secure and hold wires; material: PTEG/PLA; Price:-; Link:-{Will be priced once all parts are made}
 
 ### Drivetrain components
-Brushless motor mount; 1pc; secure motor; material: PA-CF/Nylon; Price:-; Link:-
+Brushless motor mount; 1pc; secure motor; material: PA-CF/Nylon; Price:-; Link:-{Will be priced once all parts are made}
 
-Diffrerntial housing; 1pc; highload drivetrain enclosure; material: Nylon/PA-CF; Price:-; Link:-
 
-Diffrerntial cover; 1pc; to cover the differential housing; material: ABS/PTEG; Price:-; Link:-
+Bearings holders; 4-8 pcs; Maintains bearing alignment under load; material: nylon/PA-CF; Price:-; Link:-{Will be priced once all parts are made}
 
-Bearings holders; 4-8 pcs; Maintains bearing alignment under load; material: nylon/PA-CF; Price:-; Link:-
+Wheel hubs/adapters; 4 pc; Transfer torque from axle to wheels; material: Nylon/PA-CF; Price:-; Link:-{Will be priced once all parts are made}
 
-Wheel hubs/adapters; 4 pc; Transfer torque from axle to wheels; material: Nylon/PA-CF; Price:-; Link:-
-
-Shaft collars; 2-4 pc; Prevents axle movement; material: Nylon/PETG; Price:-; Link:-
+Shaft collars; 2-4 pc; Prevents axle movement; material: Nylon/PETG; Price:-; Link:-{Will be priced once all parts are made}
 
 ### Steering system
-Steering Knuckles; 2pc; handles strreing load; material: Nylon/PA-CF; ; Price:-; Link:-
+Steering Knuckles; 2pc; handles strreing load; material: Nylon/PA-CF; ; Price:-; Link:-{Will be priced once all parts are made}
 
-Servo horn adapter; 1pc; Transfers servo movement to steering linkage; material: Nylon/PETG; ; Price:-; Link:-
+Servo horn adapter; 1pc; Transfers servo movement to steering linkage; material: Nylon/PETG; ; Price:-; Link:-{Will be priced once all parts are made}
 
-steering linkage mounts; 1 set; maintain strreing geometry; PETG/Nylon; Price:-; Link:-
+steering linkage mounts; 1 set; maintain strreing geometry; PETG/Nylon; Price:-; Link:-{Will be priced once all parts are made}
 
-Ackermann steering plate; 1pc; improves cornering steering geometry; material: PETG/nylon; Price:-; Link:-
+Ackermann steering plate; 1pc; improves cornering steering geometry; material: PETG/nylon; Price:-; Link:-{Will be priced once all parts are made}
 
 ### Aero and Body components
-Front wing; 1pc; body component; material: PLA/PETG; Price:-; ; Link:-
+Front wing; 1pc; body component; material: PLA/PETG; Price:-; ; Link:-{Will be priced once all parts are made}
 
-Rear wing with DRS flap; 1pc; rear moving DRS style flap;  material: PETG; Price:-; Link:-
+Rear wing with DRS flap; 1pc; rear moving DRS style flap;  material: PETG; Price:-; Link:-{Will be priced once all parts are made}
 
-Diffuser; 1pc; Underbody airflow experiment;  material: PLA/PETG; Price:-; Link:-
+Diffuser; 1pc; Underbody airflow experiment;  material: PLA/PETG; Price:-; Link:-{Will be priced once all parts are made}
 
-body mounting clips; many; to make removeable body panels;  material: PETG; Price:-; Link:-
+body mounting clips; many; to make removeable body panels;  material: PETG; Price:-; Link:-{Will be priced once all parts are made}
 
-Chassis mounting brackets; many; Connects 3D printed components to cardboard chassis structure; material: PETG; Price:-; Link:-
+Chassis mounting brackets; many; Connects 3D printed components to cardboard chassis structure; material: PETG; Price:-; Link:-{Will be priced once all parts are made}
 
 ### Prototype and testing
-- Parts such as motor mounts, differential housing, Servo brackets; Price:-; Link:-
+- Parts such as motor mounts, Servo brackets; Price:-; Link:-{Will be priced once all parts are made}
 # Note: ESC might have BEC inbuilt so i may remove it later...
