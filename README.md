@@ -15,6 +15,20 @@ I like f1 also i like making hardware as i had told earlier i had made very basi
 - I have used Ai at the start to learn the skills needed to learn coding the Arduino and esp32 as i aldready knew something of C++ due to it being a chapter for us in schol i didnt need to use too much AI
 - secondly i used Ai when i had t start with CAD as i had never used Cad i used a cmbo of Claude and Youtube to learn CAD
 
+## Onshape(CAD) Models
+- Battery Holder- https://raw.githubusercontent.com/Shririiiiiiiiiiiiiiiiiiiiiiang/Roadrunner-F1_RC_car/main/stl%20files/battery%20holder.stl
+- ![Battery holder](stl%20files/photos/battery%20holder.png)
+
+- Wire clip- https://raw.githubusercontent.com/Shririiiiiiiiiiiiiiiiiiiiiiang/Roadrunner-F1_RC_car/main/stl%20files/clip.stl
+- ![ESP32 holder](stl%20files/photos/ESP32%20holder%20holder.png)
+
+- ESP32 bracket- https://raw.githubusercontent.com/Shririiiiiiiiiiiiiiiiiiiiiiang/Roadrunner-F1_RC_car/main/stl%20files/esp32%20bracket%20holder.stl
+- ![Sensor holder](stl%20files/photos/sensor%20holder.png)
+
+- Sensor holder- https://raw.githubusercontent.com/Shririiiiiiiiiiiiiiiiiiiiiiang/Roadrunner-F1_RC_car/main/stl%20files/sensor%20holder.stl
+-![Wire holder](stl%20files/photos/wire%20holder.png)
+
+
 ## Tech stack
 - C++
 - Wowki for simulation
